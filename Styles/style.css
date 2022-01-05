@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    }
+
+body{
+    overflow-x: hidden;
+}
+
+:root {
+    --light-color: #c4c4c4;
+    --dark-color: #1c1c1c;
+    --second--color: #5271FF;
+    --main-font: "Roboto";
+    --second-font: "Open Sans"
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--light-color);
+    height: 3.5rem;
+    width: 100vw;
+}
+
+.section {
+    height: 37.5rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header span{
+    background-color: var(--second--color);
+    color: var(--light-color);
+    font-size: 1.25rem;
+    font-family: var(--main-font);
+    padding: 0.3215rem;
+    border-radius: 0.625rem;
+}
+
+/*=========== HOME ============*/
+
+header nav a{
+    margin-left: 3.18rem;
+    color: var(--dark-color);
+    text-decoration: none;
+    font-family: var(--main-font), sans-serif;
+    font-size: 1.25rem;
+}
+
+.sec-home{ 
+    margin-top: 3.5rem;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home .title-text{
+    margin-left: 5rem;
+}
+
+#home .line{
+    color: var(--light-color);
+    background-color: var(--light-color);
+    width: 1px;
+    height: 18.75rem;
+}
+
+
+#home .title-text h3{
+    color: var(--light-color);
+    font-family: var(--second-font);
+    font-size: 2.6rem;
+}
+
+#home .title-text h1{
+    color: var(--light-color);
+    font-family: var(--main-font);
+    font-size: 3.75rem;
+    margin-top: 1.25rem;
+}
+
+#home .title-text .back-end-button{
+    border-radius: 0.625rem;
+    background-color: var(--light-color);
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 23.75rem;
+}
+
+#home .title-text .back-end-button h2{
+    color: var(--dark-color);
+    font-family: var(--second-font);
+    display: inline;
+    margin-top: 1.25rem;
+}
+
+
+/*============= SOBRE =================*/
+.sec-sobre{ 
+    background-color: var(--light-color);
+}
+
+.sec-artigo{ 
+    background-color: var(--second--color);
+}
+
+.sec-contato{
+    background-color: var(--dark-color);
+}
+
+
+
+
+
+
+
+
+footer {
+    position: absolue;
+    bottom: 0;
+    left: 0;
+    background-color: var(--light-color);
+    height: 6.25em;
+    width: 100vw;
+}
