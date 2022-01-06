@@ -20,7 +20,8 @@ body{
     --dark-color: #1c1c1c;
     --second--color: #5271FF;
     --main-font: "Roboto";
-    --second-font: "Open Sans"
+    --second-font: "Open Sans";
+    --container-margin: 10%;
 }
 
 .header {
@@ -33,12 +34,12 @@ body{
 }
 
 .section {
-    height: 37.5rem;
+    min-height: 37.5rem;
 }
 
 .container {
     width: 80%;
-    margin: 0 10% 0 10%;
+    margin: 0 var(--container-margin) 0 var(--container-margin);
 }
 
 header {
@@ -128,7 +129,52 @@ header nav a{
 /*============= SOBRE =================*/
 .sec-sobre{ 
     background-color: var(--light-color);
+
 }
+
+#sobre .circulo-sobre{
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: var(--second--color);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+#sobre .title-sobre, #sobre .text-sobre{
+    color: var(--dark-color);
+}
+
+#sobre .title-sobre{
+  font-family: var(--main-font);
+  font-size: 3.75rem;
+}
+
+#sobre .text-sobre{
+  font-family: var(--second-font);
+}
+
+#sobre .sobre-texts{
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 6.875rem
+}
+
+#sobre .sobre-texts p{
+    width: 50%;
+    margin-top: 1rem;
+}
+
+#sobre .robo{
+    position: absolute;
+    right: var(--container-margin);
+    margin-top: 6.875rem;
+    margin-right: 5rem;
+}
+
+
+
 
 .sec-artigo{ 
     background-color: var(--second--color);
