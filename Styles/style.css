@@ -174,7 +174,7 @@ header nav a{
 }
 
 
-
+/*==========ARTIGOS===============*/
 
 .sec-artigo{ 
     background-color: var(--second--color);
@@ -183,6 +183,61 @@ header nav a{
 .sec-contato{
     background-color: var(--dark-color);
 }
+
+#artigo .title-artigo{
+    font-family: var(--main-font);
+    font-size: 3.75rem;
+    color: var(--light-color);
+    text-align: center;
+    padding: 3.125rem;
+  }
+
+#artigo .artigos-boxes{
+    display: flex;
+    gap: 1.5625rem;
+}
+
+#artigo .artigos-boxes .artigo-box{
+    background-color: var(--light-color);
+    padding: 2.2rem;
+}
+
+#artigo .artigos-boxes .artigo-box{
+    background-color: var(--light-color);
+    padding: 2.2rem;
+    
+}
+
+#artigo .artigos-boxes .artigo-box .artigo-title{
+    font-family: var(--main-font);
+}
+
+#artigo .artigos-boxes .artigo-box .artigo-text{
+    font-family: var(--second-font);
+    margin: 1.25rem 0 2.5rem 0;
+}
+
+#artigo .artigos-boxes .artigo-box .artigo-button{
+    font-family: var(--main-font);
+    text-decoration: none;
+    background-color: var(--second--color);
+    color: var(--light-color);
+    padding: 0.625rem 2.5rem;
+    margin-top: 0.625rem;
+    border-radius: 0.3125rem;
+}
+
+#artigo .btn-artigos{
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: var(--light-color);
+    
+}
+
+
+
+
+
 
 
 
