@@ -28,10 +28,7 @@
     <main>
         <section class="section sec-home">
             <div class="container" id="home">
-                <div class="line">
-                    
-                </div>
-
+                <div class="line"></div>
                 <div class="title-text">
                     <h3>Bem-vindo(a), eu sou</h3>
                     <h1>JEAN CARLOS DE PAULA</h1>
@@ -40,14 +37,13 @@
                         <h2>Back-end Developer</h2>
                     </div>
                 </div>
-                <img src="./Image/foto.svg" alt="main-picture">
+                <img src="./Image/foto.svg" alt="main-picture" class="main-picture">
             </div>
         </section>
 
         <section class="section sec-sobre">
+            <div class="circulo-sobre"></div>
             <div class="container" id="sobre">
-                <div class="circulo-sobre">
-                </div>
                 <div class="sobre-texts">
                     <h1 class="title-sobre">QUEM SOU EU?</h1>
                     <p class="text-sobre">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -84,15 +80,42 @@
         </section>
         <section class="section sec-contato">
             <div class="container" id="contato">
-
+                <h1 class="title-contato">FALE COMIGO</h1>
+                <div class="contato-content">
+                    <form action="" class="form-contato">
+                        <label for="nome-input">Nome</label>
+                            <input type="text" name="nome" id="nome-input">
+                        <label for="email-input">Email</label>
+                            <input type="email" name="email" id="email-input">
+                        <label for="mensagem-input">Mensagem</label>
+                            <textarea name="mensagem" id="mensagem-input"></textarea>
+                        <button type="submit" class="enviar-contato">Enviar</button>
+                    </form>
+    
+                    <div class="line"></div>
+    
+                    <div class="links-contato">
+                        <div class="links-superior">
+                            <div class="linkedin-icon">
+                                <a href=""><img src="./Image/linked.svg" alt="linkedin-icon"></a>
+                            </div>
+                            <div class="instagram-icon">
+                                <a href=""><img src="./Image/instagram.svg" alt="instagram-icon"></a>
+                            </div>
+                        </div>
+                        <div class="links-inferior">
+                            <a href=""><img src="./Image/github.svg" alt="github-icon">Projetos</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <span></span>
-            <span></span>
+                <span>Copyright © 2022</span>
+                <span>Todos os direitos reservados</span>
         </div>
     </footer>
 </body>
