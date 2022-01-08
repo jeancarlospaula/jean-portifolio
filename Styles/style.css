@@ -9,7 +9,7 @@
 
 html {
     scroll-behavior: smooth;
-    width: 100vw;
+    overflow-x: hidden;
 }
 
 :root {
@@ -146,6 +146,7 @@ display: block;
   font-family: var(--main-font);
   font-size: 3.75rem;
   z-index: 1;
+  display: inline-block;
 }
 
 .sec-sobre .title-sobre::after{
@@ -473,5 +474,11 @@ footer span{
     #contato .links-contato{
         align-items: center;
         padding-bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 572px) {
+    .sec-sobre .title-sobre::after{
+        margin-top:-10rem;
     }
 }
