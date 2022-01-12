@@ -273,7 +273,6 @@ display: block;
     content: '';
     width: inherit;
     max-width: 25rem;
-    min-width: 15.625rem;
     height: 1.875rem;
     background-color: var(--second--color);
     display: block;
@@ -407,6 +406,20 @@ footer span{
 
 
 /*=====MOBILE HOME======*/
+    header nav{
+        display: flex;
+        align-items: center;
+    }
+
+    header nav a{
+        font-size: 15px;
+        margin-left: 1.18rem;
+    }
+
+    header span {
+        font-size: 1rem;
+    }
+
     #home{
         display: flex;
         flex-direction: column;
@@ -429,24 +442,25 @@ footer span{
 
     #home .main-picture{
         margin-bottom: 4.375rem;
+        width: 20.625rem;
     }
 /*======MOBILE SOBRE=========*/
-#sobre{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
+    #sobre{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 
-#sobre .sobre-texts{
-    margin: 3rem 0 1rem 0;
-}
+    #sobre .sobre-texts{
+        margin: 3rem 0 1rem 0;
+    }
 
-#sobre .robo{
-    width: 150px;
-    margin: 0 0 2rem 0;
-}
+    #sobre .robo{
+        width: 150px;
+        margin: 0 0 2rem 0;
+    }
 
 /*======MOBILE ARTIGOS========*/
     #artigo .artigos-boxes{
@@ -478,6 +492,16 @@ footer span{
 }
 
 @media (max-width: 572px) {
+    #home .title-text h3 {
+        font-size: 1.6rem;
+    }
+
+    #home .title-text h1, 
+    #artigo .title-artigo,
+    #contato .title-contato {
+        font-size: 2.75rem;
+    }
+
     .sec-sobre .title-sobre::after{
         margin-top:-10rem;
     }
