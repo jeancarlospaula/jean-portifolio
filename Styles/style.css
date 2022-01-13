@@ -128,14 +128,19 @@ display: block;
 }
 /*============= SOBRE =================*/
 .sec-sobre{ 
-    background-color: var(--light-color);
     align-items: center;
     display: flex;
+    background-color: var(--light-color);
+    background-image: url('../Image/ondas.svg');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 25rem;
 }
 
 #sobre{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 2rem;
 }
 
 #sobre .title-sobre, #sobre .text-sobre{
@@ -174,8 +179,7 @@ display: block;
 
 
 /*==========ARTIGOS===============*/
-
-.sec-artigo{ 
+.sec-artigo{
     background-color: var(--second--color);
 }
 
@@ -219,6 +223,11 @@ display: block;
     background-color: var(--light-color);
     padding: 2.2rem;
     border-radius: 0.3125rem;
+    width: 31.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #artigo .artigos-boxes .artigo-box .artigo-title{
@@ -331,6 +340,7 @@ display: block;
     outline: none;
     margin-top: 0.94rem;
     width: 21.8rem;
+    cursor: pointer;
 }
 
 #contato .line::before{
@@ -402,7 +412,7 @@ footer span{
 
 /*======= MEDIA QUERIES ========*/
 
-@media (max-width: 1000px) {
+@media (max-width: 1018px) {
 
 
 /*=====MOBILE HOME======*/
@@ -445,6 +455,11 @@ footer span{
         width: 20.625rem;
     }
 /*======MOBILE SOBRE=========*/
+
+    .sec-sobre{ 
+        background-size: 12rem;
+    }
+
     #sobre{
         display: flex;
         justify-content: space-around;
@@ -467,6 +482,10 @@ footer span{
         display: flex;
         flex-direction: column;
         gap: 1.5625rem;
+    }
+
+    #artigo .artigos-boxes .artigo-box{
+        width: 100%;
     }
 
 /*=======MOBILE CONTATO=======*/
@@ -498,11 +517,20 @@ footer span{
 
     #home .title-text h1, 
     #artigo .title-artigo,
-    #contato .title-contato {
+    #contato .title-contato, #sobre .title-sobre{
         font-size: 2.75rem;
     }
 
     .sec-sobre .title-sobre::after{
-        margin-top:-10rem;
+        width: 70px;
+        height: 70px;    
+        margin-top: -5.2rem;
+        margin-left: -2.2rem;
+    }
+}
+@media (max-width: 433px) {
+    .sec-sobre .title-sobre::after{
+        margin-top: -8rem;
+        margin-left: -2.1875rem;
     }
 }
