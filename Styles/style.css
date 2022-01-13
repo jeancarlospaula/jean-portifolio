@@ -59,16 +59,39 @@ header span{
     border-radius: 0.625rem;
 }
 
-/*=========== HOME ============*/
-
 header nav a{
     margin-left: 3.18rem;
     color: var(--dark-color);
     text-decoration: none;
     font-family: var(--main-font), sans-serif;
     font-size: 1.25rem;
+    position: relative;
 }
 
+header nav a:hover {
+    width: 100%;
+    color: var(--second--color);
+}
+
+header nav a:hover::before,
+nav a.active::before {
+    width: 100%;
+}
+
+header nav a::before {
+    content: "";
+    height: 4px;
+    width: 0%;
+    background: var(--second--color);
+    
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    
+    transition: width 0.2s;
+}
+
+/*=========== HOME ============*/
 .sec-home{ 
     margin-top: 3.5rem;
     background-color: var(--dark-color);
@@ -121,6 +144,7 @@ display: block;
     font-family: var(--second-font);
     display: inline;
     margin-top: 1.25rem;
+    font-size: 2rem;
 }
 
 #home .main-picture{
@@ -252,6 +276,11 @@ display: block;
     margin: 0 auto;
 }
 
+#artigo .artigos-boxes .artigo-box .artigo-button:hover{
+    transition: 0.5s;
+    background-color: #5e7bfc;
+}
+
 #artigo .btn-artigos{
     text-decoration: none;
     font-family: var(--main-font);
@@ -298,7 +327,6 @@ display: block;
 #contato .form-contato{
     display: flex;
     flex-direction: column;
-
 }
 
 #contato .form-contato label{
@@ -343,6 +371,11 @@ display: block;
     cursor: pointer;
 }
 
+#contato .form-contato .enviar-contato:hover {
+    transition: 0.5s;
+    background-color: #5e7bfc;
+}
+
 #contato .line::before{
     content: '';
     width: 1px;
@@ -357,6 +390,13 @@ display: block;
 
 #contato .links-contato{
     align-items: center;
+}
+
+#contato .links-contato .links-superior .linkedin-icon:hover,
+#contato .links-contato .links-superior .instagram-icon:hover,
+#contato .links-contato .links-inferior:hover{
+    background-color: rgb(226, 226, 226);
+    transition: 0.5s;
 }
 
 #contato .links-contato .links-superior .linkedin-icon,
@@ -412,7 +452,7 @@ footer span{
 
 /*======= MEDIA QUERIES ========*/
 
-@media (max-width: 1018px) {
+@media (max-width: 1200px) {
 
 
 /*=====MOBILE HOME======*/
@@ -428,6 +468,10 @@ footer span{
 
     header span {
         font-size: 1rem;
+    }
+
+    header nav a::before {
+        bottom: -1.2rem;
     }
 
     #home{
@@ -448,6 +492,7 @@ footer span{
     #home .title-text .back-end-button{
         display: inline-block;
         margin-bottom: 4.375rem;
+        width: 100%;
     }
 
     #home .main-picture{
@@ -529,6 +574,10 @@ footer span{
     }
 }
 @media (max-width: 433px) {
+    header span {
+        font-size: 0.8rem;
+    }
+
     .sec-sobre .title-sobre::after{
         margin-top: -8rem;
         margin-left: -2.1875rem;
