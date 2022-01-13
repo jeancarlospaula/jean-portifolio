@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -455,14 +454,14 @@ footer span{
 @media (max-width: 1200px) {
 
 
-/*=====MOBILE HOME======*/
+/*=====MOBILE HEADER======*/
     header nav{
         display: flex;
         align-items: center;
     }
 
     header nav a{
-        font-size: 15px;
+        font-size: 0.8rem;
         margin-left: 1.18rem;
     }
 
@@ -471,9 +470,10 @@ footer span{
     }
 
     header nav a::before {
-        bottom: -1.2rem;
+        bottom: -1.3rem;
     }
 
+/*=====MOBILE HOME======*/
     #home{
         display: flex;
         flex-direction: column;
@@ -581,5 +581,21 @@ footer span{
     .sec-sobre .title-sobre::after{
         margin-top: -8rem;
         margin-left: -2.1875rem;
+    }
+}
+
+@media (max-width: 374px) {
+    header span {
+        font-size: 0.6rem;
+    }
+
+    #home .title-text .back-end-button h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 361px) {
+    #home .title-text .back-end-button h2 {
+        font-size: 1.7rem;
     }
 }
